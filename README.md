@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Task Manager is a web application designed to help users manage their tasks efficiently. Users can add, edit, and organize tasks into different categories and statuses. This project utilizes React, TypeScript, and Tailwind CSS for a robust and visually appealing user experience.
 
-Currently, two official plugins are available:
+![Screenshot 2025-01-10 124937](https://github.com/user-attachments/assets/af6bf3ea-d79c-408a-94dd-db20b1b0241f)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+User authentication with Google Sign-In.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Add, edit, delete, and view tasks.
 
-- Configure the top-level `parserOptions` property like this:
+Organize tasks by status (To Do, In Progress, Completed).
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Categorize tasks (Work, Personal, etc.).
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Responsive UI with Tailwind CSS.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Tech Stack
+
+Frontend: React, TypeScript
+
+Styling: Tailwind CSS
+
+Routing: React Router
+
+State Management: React useState and useContext 
+
+Storage: LocalStorage
